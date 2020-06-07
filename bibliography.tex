@@ -1,0 +1,69 @@
+\documentclass[
+,a4paper
+,DIV=12
+,12pt
+,abstract
+,bibliography=totoc
+]{scrartcl}
+
+\usepackage[
+,font=guyot
+,babel=english
+,header=false
+,geometry
+,autolang=hyphen
+,numbers=osf
+]{sty/zpart}
+
+
+
+\author{Leo Vivier}
+\date{\today}
+% \date{\printdate{2018-05-15}}
+\title{Monty Python's Flying Circus: Political Satire \& Political Posture}
+\subtitle{Bibliography}
+
+\addbibresource{/home/zaeph/org/bib/monty-python.bib}
+\addbibresource{/home/zaeph/org/bib/monty-python-didactics.bib}
+\nocite{*}
+
+% \AtBeginEnvironment{quote}{\vspace{-0.2\baselineskip}\singlespacing}
+\AtBeginEnvironment{quote}{\vspace{-0.2\baselineskip}}
+\AfterEndEnvironment{quote}{\vspace{-0.2\baselineskip}}
+\AtBeginEnvironment{quotation}{\addvspace{\baselineskip}\singlespacing}
+\AfterEndEnvironment{quotation}{\addvspace{1.5\baselineskip}}
+
+% Redefine parts
+\renewcommand\partheadstartvskip{\clearpage\null\vfil}
+\renewcommand\partheadmidvskip{\par\nobreak\vskip 20pt}
+% \renewcommand\partheadmidvskip{\par\nobreak\vskip 20pt\thispagestyle{empty}}
+\renewcommand\partheadendvskip{\vfil\clearpage}
+\renewcommand\raggedpart{\centering}
+
+% Reduce quote font-size
+\AtBeginEnvironment{quote}{\vspace{0.3\baselineskip}\setstretch{1.2}\small}
+
+% \linespread{1.7}
+
+\begin{document}
+% \onehalfspacing
+% \doublespacing
+
+\maketitle
+
+% \begin{otherlanguage}{english}
+%   \begin{abstract}
+%   \end{abstract}
+% \end{otherlanguage}
+
+
+\tableofcontents
+\clearpage
+
+\setstretch{1.8}
+
+{\setstretch{1.2}
+  \printbibliography%
+}
+
+\end{document}
