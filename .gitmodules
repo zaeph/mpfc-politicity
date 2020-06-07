@@ -1,0 +1,3 @@
+[submodule "sty"]
+	path = sty
+	url = /home/zaeph/org/tex/sty/zpart
